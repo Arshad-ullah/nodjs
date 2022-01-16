@@ -7,7 +7,7 @@ const port=process.env.PORT || 3000
 
 app.get('/',(req,res)=>
 {
-    res.send('how are you')
+    res.send('how are you can you tell me about')
 })
 
 app.get('/player',(req,res)=>{
