@@ -4,18 +4,17 @@
   "description": "testing",
   "main": "index.js",
   "scripts": {
-    
     "start": "node index.js"
   },
   "author": "arshad",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^12.0.3",
     "express": "^4.17.2"
   },
   "engines": {
     "node": "16.13.2"
   },
-
   "devDependencies": {
     "nodemon": "^2.0.15"
   }
