@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "author": "arshad",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2"
   },
+  "engines": {
+    "node": "16.13.2"
+  },
+
   "devDependencies": {
     "nodemon": "^2.0.15"
   }
