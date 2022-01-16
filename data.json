@@ -1,0 +1,20 @@
+[
+    {
+        "name":"arshad",
+        "desc":"Student",
+        "age":32
+    },
+    {
+        "name":"Ikram",
+        "desc":"Student",
+        "age":32
+    },
+    
+    {
+        "name":"khan",
+        "desc":"Student",
+        "age":33
+    }
+    
+    
+]
