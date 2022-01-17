@@ -1,19 +1,23 @@
-const express=require('express');
+const express=require("express");
+const res = require("express/lib/response");
 
-const data=require('./data.json')
+const  user=require("./routes/user");
+
 const app=express();
 
-const port=process.env.PORT || 3000
+const PORT= process.env.PORT || 3002;
 
-app.get('/',(req,res)=>
-{
-    res.send('how are you can you tell me about')
-})
 
-app.get('/player',(req,res)=>{
-    res.send(data)
-})
 
-console.log(data)
 
-app.listen(port,()=>console.log("running on:"+port))
+const mongoose=require("mongoose");
+
+require("dotenv/config");
+
+app.use(express.json())
+
+app.use("/user", user)
+
+mongoose.connect(process.env.DB_CONNECT,()=>console.log("connect to db"));
+
+app.listen(PORT,()=>console.log("how are you kdk"))
